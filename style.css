@@ -1,0 +1,159 @@
+.first-layer{
+    background-color: rgb(214, 231, 231);
+    height:500px ;
+    padding-left:140px;
+    padding-top: 30px;
+    position: relative;
+}
+
+.second-layer{
+    background: linear-gradient(to bottom right, #001f3f, #007BFF);
+height:300px;
+width: 300px;
+border-radius: 7px;
+display: inline-block;
+}
+
+.second-layer h1{
+    color:white;
+    padding-top: 80px;
+    padding-left: 30px;
+
+}
+
+.second-layer p{
+    color: white;
+    padding-left: 30px;
+    font-size: 12px;
+}
+
+.flex-layout {
+  display: flex;
+  gap: 40px; /* space between the two boxes */
+  align-items: flex-start; /* align to top */
+}
+
+
+.steps {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+  gap: 10px;}
+
+.third-layer {
+  width: 600px; 
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+  
+ .step {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  background-color: lightgray;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;}
+  
+  .step.active {
+  background-color: #007BFF;
+  color: white;
+  }
+
+  .step-info{
+    background-color: white;
+    width:600px;
+    height:400px;
+    margin-left: 35px;
+    
+  }
+
+  .step-info form {
+    padding: 30px;
+  }
+  
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"], input[type="tel"] {
+  border: none;
+  border-bottom: 2px solid gray;
+  background: transparent;
+  padding: 10px 5px;
+  width: 50%;
+  outline: none;
+ margin-bottom: 20px;
+}
+
+input[type="file"]{
+border: dotted 5px lightblue;
+height: 70px;
+width: 35rem;
+border-radius: 4px;
+}
+
+select {
+  width: 50%;
+  padding: 10px 5px;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid gray;
+  outline: none;
+  margin-bottom: 20px;
+  font-family: inherit;
+  font-size: 1rem;
+  appearance: none; 
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%204%205'%3E%3Cpath%20fill='gray'%20d='M2%200L0%202h4z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px top 50%;
+  background-size: 10px 10px;
+}
+
+.form-step {
+  display: none;
+  padding: 20px 10px;
+}
+
+.form-step p, h1{
+  color: black;
+  font-family:Arial, Helvetica, sans-serif
+}
+
+b{
+  color: rgb(91, 194, 228);
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  margin: 10px 10px 0 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .first-layer {
+    padding: 10px;
+  }
+}
+
+  @media (max-width: 480px) {
+  .second-layer h1 {
+    font-size: 1.3rem;
+  }
+  }
+
